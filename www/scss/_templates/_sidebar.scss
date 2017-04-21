@@ -1,0 +1,14 @@
+.cus-input input[type="text"] {
+    position: relative;
+    border-radius: 22px;
+}
+
+input { font-family: 'FontAwesome'; } /* This is for the placeholder */
+
+.cus-input input::placeholder {
+  padding-left: 5px;
+}
+
+input::-webkit-color-swatch {
+    border: none;
+}

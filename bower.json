@@ -1,0 +1,28 @@
+{
+  "name": "assignment",
+  "description": "A system for publishing articles organized by content.",
+  "main": "index.js",
+  "authors": [
+    "Thusitha"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap-css": "^3.3.7",
+    "angular-jquery": "^0.2.1",
+    "jquery": "^3.2.1",
+    "angular-route": "^1.6.4",
+    "bootstrap-material-design": "^4.0.2",
+    "d3": "^4.8.0",
+    "angular-nvd3": "^1.0.9",
+    "angular-chart.js": "^1.1.1"
+  }
+}

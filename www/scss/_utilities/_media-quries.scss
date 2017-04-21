@@ -1,0 +1,45 @@
+
+
+//width less than 1140 devices
+
+@media (max-width: 1140px) {
+  .x-hide {
+    display:none !important;
+  }
+}
+
+
+//width grater than 768 devices
+@media (min-width: 768px) {
+  .sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 251px;
+    margin-top: 51px;
+  }
+  .navbar-top-links .dropdown-messages,
+  .navbar-top-links .dropdown-tasks,
+  .navbar-top-links .dropdown-alerts {
+    margin-left: auto;
+  }
+
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    border-left: 1px solid #e7e7e7;
+  }
+}
+
+//width less than 768 devices
+@media (max-width: 768px) {
+
+  .widget-container {
+    display: none;
+  }
+
+  body {
+    overflow: auto
+  }
+}
+

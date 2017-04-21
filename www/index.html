@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" ng-app="assignment">
+<head>
+  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href=" img/favicon.png" />
+
+  <title>Dashboard</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href=" lib/bootstrap-css/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="dist/css/app.css?v=1" rel="stylesheet" />
+  <link rel="stylesheet" href="lib/nvd3/build/nv.d3.css">
+
+  <!-- jquery -->
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+
+  <!-- vendorjs -->
+  <script src="dist/js/prod/vendor.min.js"></script>
+
+  
+  <script src="lib/d3/d3.js"></script>
+  <script src="lib/nvd3/build/nv.d3.js"></script> 
+  <script src="lib/angular-nvd3/dist/angular-nvd3.js"></script>
+  <script src="lib/chart.js/dist/Chart.js"></script>
+  <script src="lib/angular-chart.js/dist/angular-chart.js"></script>
+
+   <!-- business logic -->
+  <script src="dist/js/prod/app.min.js"></script>
+
+  <!-- Metis Menu Plugin JavaScript -->
+  <script src="lib/metisMenu/metisMenu.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+ <script src="lib/side-menu.js"></script>
+  
+  <base href="/">
+</head>
+
+<body>
+
+  <div id="wrapper" ng-controller="MainController">
+
+        <!-- Navigation -->
+        <div ng-include="'templates/navigation.html'"></div>
+        <!-- /.Navigation -->
+
+        <!-- widget -->
+        <div id="widget-container" class="widget-container">
+            <div id="widget-top"  class="widget-top" ng-click="widget()"></div>
+            <div id="widget-button" class="widget-button" ng-click="widget()">Widget Bar</div>
+            <div id="widget-bottom" class="widget-bottom" ng-click="widget()"></div>
+            <div ng-include="'templates/widget.html'"></div>
+        </div>
+        <!-- /.widget -->
+
+        <div id="page-wrapper">
+            <ng-view></ng-view>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</body>
+</html>
