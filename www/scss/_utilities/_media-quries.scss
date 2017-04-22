@@ -34,10 +34,40 @@
 //width less than 768 devices
 @media (max-width: 768px) {
 
-  .widget-container {
-    display: none;
+  .widget-ul {
+
+    li {
+      width: 35%;
+      height: 98px;
+      max-height: 98px; 
+    }
+
+    .sub-heading {
+
+        .right {
+            padding-right: 30px;
+        }
+    }
+
+    .space {
+      width: 88%;
+    }
+
   }
 
+  
+  .widget-panel {    
+  
+    .body {
+        img {
+           height: 35px;
+        }
+    }
+
+    span {
+        margin-right: -31%;
+    }
+  }
   body {
     overflow: auto
   }

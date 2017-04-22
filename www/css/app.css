@@ -440,7 +440,17 @@ input::-webkit-color-swatch {
     border-left: 1px solid #e7e7e7; } }
 
 @media (max-width: 768px) {
-  .widget-container {
-    display: none; }
+  .widget-ul li {
+    width: 35%;
+    height: 98px;
+    max-height: 98px; }
+  .widget-ul .sub-heading .right {
+    padding-right: 30px; }
+  .widget-ul .space {
+    width: 88%; }
+  .widget-panel .body img {
+    height: 35px; }
+  .widget-panel span {
+    margin-right: -31%; }
   body {
     overflow: auto; } }

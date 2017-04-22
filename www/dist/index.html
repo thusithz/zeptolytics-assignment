@@ -53,7 +53,12 @@
         <!-- /.Navigation -->
 
         <!-- widget -->
-         <div ng-include="'templates/widget.html'"></div>
+        <div id="widget-container" class="widget-container">
+            <div id="widget-top"  class="widget-top" ng-click="widget()"></div>
+            <div id="widget-button" class="widget-button" ng-click="widget()">Widget Bar</div>
+            <div id="widget-bottom" class="widget-bottom" ng-click="widget()"></div>
+            <div ng-include="'templates/widget.html'"></div>
+        </div>
         <!-- /.widget -->
 
         <div id="page-wrapper">
